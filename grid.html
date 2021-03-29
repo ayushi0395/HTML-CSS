@@ -1,26 +1,42 @@
 <html>
 <head>
 	<style >
+		body
+		{
+			background:black;
+		}
+		h1
+		{
+			color:white;
+			font-style: bold;
+			font-style: italic;
+			text-align:center;
+		}
 		main
 		{
+			color:black;
+			font-style:bold;
           width:70%;
           margin:50 auto;
-
+          display:grid;
+          grid-template-rows:90px 100px 200px 90px;
+          grid-template-columns:200px 200px 200px 150px;
+          grid-gap:20px;
 		}
-		
-		.div1{background-color: orange}
+		.div1{background-color: orange; grid-column:1/-1;}
 		.div2{background-color: pink}
 		.div3{background-color: purple}
 		.div4{background-color: white}
-		.div5{background-color: brown}
-		.div6{background-color: red}
-		.div7{background-color: cyan}
-
-
+		.div5{
+		 background-color: brown;
+		}
+		.div6{background-color: red; grid-column:1/-2;}
+		.div7{background-color: cyan;grid-column:1/-1;}
 	</style>
 </head>
 <body>
 <main>
+	<h1>Grid Practice!</h1>
 <div class="div1"> Header</div>
 <div class="div2"> box1</div>
 <div class="div3"> box2</div>
